@@ -1,0 +1,277 @@
+[
+    {
+        "label": "smtplib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "smtplib",
+        "description": "smtplib",
+        "detail": "smtplib",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEText",
+        "importPath": "email.mime.text",
+        "description": "email.mime.text",
+        "isExtraImport": true,
+        "detail": "email.mime.text",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEText",
+        "importPath": "email.mime.text",
+        "description": "email.mime.text",
+        "isExtraImport": true,
+        "detail": "email.mime.text",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEMultipart",
+        "importPath": "email.mime.multipart",
+        "description": "email.mime.multipart",
+        "isExtraImport": true,
+        "detail": "email.mime.multipart",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEMultipart",
+        "importPath": "email.mime.multipart",
+        "description": "email.mime.multipart",
+        "isExtraImport": true,
+        "detail": "email.mime.multipart",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEBase",
+        "importPath": "email.mime.base",
+        "description": "email.mime.base",
+        "isExtraImport": true,
+        "detail": "email.mime.base",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEBase",
+        "importPath": "email.mime.base",
+        "description": "email.mime.base",
+        "isExtraImport": true,
+        "detail": "email.mime.base",
+        "documentation": {}
+    },
+    {
+        "label": "encoders",
+        "importPath": "email",
+        "description": "email",
+        "isExtraImport": true,
+        "detail": "email",
+        "documentation": {}
+    },
+    {
+        "label": "encoders",
+        "importPath": "email",
+        "description": "email",
+        "isExtraImport": true,
+        "detail": "email",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "strftime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "FPDF",
+        "importPath": "fpdf",
+        "description": "fpdf",
+        "isExtraImport": true,
+        "detail": "fpdf",
+        "documentation": {}
+    },
+    {
+        "label": "pymysql",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pymysql",
+        "description": "pymysql",
+        "detail": "pymysql",
+        "documentation": {}
+    },
+    {
+        "label": "qrcode",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "qrcode",
+        "description": "qrcode",
+        "detail": "qrcode",
+        "documentation": {}
+    },
+    {
+        "label": "send_emails",
+        "kind": 2,
+        "importPath": "emailsend",
+        "description": "emailsend",
+        "peekOfCode": "def send_emails(rec_email):\n    for person in rec_email:\n        body = \"\"\"\n                    1\n                    2\n                    3\n                \"\"\"\n        msg = MIMEMultipart()\n        msg['from'] = sender_email\n        msg['to'] =person",
+        "detail": "emailsend",
+        "documentation": {}
+    },
+    {
+        "label": "sender_email",
+        "kind": 5,
+        "importPath": "emailsend",
+        "description": "emailsend",
+        "peekOfCode": "sender_email = \"abpatel0421@gmail.com\"\nrec_email = [\"ajaydalsaniya99794@gmail.com\"]\n#password = input(str(\"please enter your password : \"))\npassword =str(\"iavr livu soti qslo\")\nsubject = \"new email from tie attachment\"\n\"\"\"\nserver = smtplib.SMTP('smtp.gmail.com',587)\nserver.ehlo()\nserver.starttls()\nserver.login(sender_email,password)",
+        "detail": "emailsend",
+        "documentation": {}
+    },
+    {
+        "label": "rec_email",
+        "kind": 5,
+        "importPath": "emailsend",
+        "description": "emailsend",
+        "peekOfCode": "rec_email = [\"ajaydalsaniya99794@gmail.com\"]\n#password = input(str(\"please enter your password : \"))\npassword =str(\"iavr livu soti qslo\")\nsubject = \"new email from tie attachment\"\n\"\"\"\nserver = smtplib.SMTP('smtp.gmail.com',587)\nserver.ehlo()\nserver.starttls()\nserver.login(sender_email,password)\nprint(\"login success \")",
+        "detail": "emailsend",
+        "documentation": {}
+    },
+    {
+        "label": "#password",
+        "kind": 5,
+        "importPath": "emailsend",
+        "description": "emailsend",
+        "peekOfCode": "#password = input(str(\"please enter your password : \"))\npassword =str(\"iavr livu soti qslo\")\nsubject = \"new email from tie attachment\"\n\"\"\"\nserver = smtplib.SMTP('smtp.gmail.com',587)\nserver.ehlo()\nserver.starttls()\nserver.login(sender_email,password)\nprint(\"login success \")\nserver.sendmail(sender_email,rec_email,message)",
+        "detail": "emailsend",
+        "documentation": {}
+    },
+    {
+        "label": "subject",
+        "kind": 5,
+        "importPath": "emailsend",
+        "description": "emailsend",
+        "peekOfCode": "subject = \"new email from tie attachment\"\n\"\"\"\nserver = smtplib.SMTP('smtp.gmail.com',587)\nserver.ehlo()\nserver.starttls()\nserver.login(sender_email,password)\nprint(\"login success \")\nserver.sendmail(sender_email,rec_email,message)\nprint(\"email has been send to \",rec_email)\n\"\"\"",
+        "detail": "emailsend",
+        "documentation": {}
+    },
+    {
+        "label": "server",
+        "kind": 5,
+        "importPath": "emailsend",
+        "description": "emailsend",
+        "peekOfCode": "server = smtplib.SMTP('smtp.gmail.com',587)\nserver.ehlo()\nserver.starttls()\nserver.login(sender_email,password)\nprint(\"login success \")\nserver.sendmail(sender_email,rec_email,message)\nprint(\"email has been send to \",rec_email)\n\"\"\"\ndef send_emails(rec_email):\n    for person in rec_email:",
+        "detail": "emailsend",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"named_tuple",
+        "kind": 5,
+        "importPath": "vacine",
+        "description": "vacine",
+        "peekOfCode": "\"\"\"named_tuple = time.localtime() # get struct_time\ntime_string = time.strftime(\"%m/%d/%Y, %H:%M:%S\", named_tuple)\"\"\"\n#time\ntime1 =strftime(\"%I : %M : %S\")\nprint(time1)\n#vacine dose date \npresentday  = datetime.now()\ndose_Date = presentday + timedelta(90)\nprint('Today : ',presentday.strftime('%d-%m-%y'))\nprint(\"Dose Date  : \",dose_Date.strftime('%d-%m-%y'))",
+        "detail": "vacine",
+        "documentation": {}
+    },
+    {
+        "label": "time_string",
+        "kind": 5,
+        "importPath": "vacine",
+        "description": "vacine",
+        "peekOfCode": "time_string = time.strftime(\"%m/%d/%Y, %H:%M:%S\", named_tuple)\"\"\"\n#time\ntime1 =strftime(\"%I : %M : %S\")\nprint(time1)\n#vacine dose date \npresentday  = datetime.now()\ndose_Date = presentday + timedelta(90)\nprint('Today : ',presentday.strftime('%d-%m-%y'))\nprint(\"Dose Date  : \",dose_Date.strftime('%d-%m-%y'))\n#d = (date.today())",
+        "detail": "vacine",
+        "documentation": {}
+    },
+    {
+        "label": "dose_Date",
+        "kind": 5,
+        "importPath": "vacine",
+        "description": "vacine",
+        "peekOfCode": "dose_Date = presentday + timedelta(90)\nprint('Today : ',presentday.strftime('%d-%m-%y'))\nprint(\"Dose Date  : \",dose_Date.strftime('%d-%m-%y'))\n#d = (date.today())\nd = (presentday.strftime('%d-%m-%y'))\nd1= str(d)\nprint(d1)\n#file name \nfilen = d1+\".txt\"\nfilep = d1+\".pdf\"",
+        "detail": "vacine",
+        "documentation": {}
+    },
+    {
+        "label": "#d",
+        "kind": 5,
+        "importPath": "vacine",
+        "description": "vacine",
+        "peekOfCode": "#d = (date.today())\nd = (presentday.strftime('%d-%m-%y'))\nd1= str(d)\nprint(d1)\n#file name \nfilen = d1+\".txt\"\nfilep = d1+\".pdf\"\nf = open(filen,\"a\")\nstatus = True\nwhile status:",
+        "detail": "vacine",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "vacine",
+        "description": "vacine",
+        "peekOfCode": "d = (presentday.strftime('%d-%m-%y'))\nd1= str(d)\nprint(d1)\n#file name \nfilen = d1+\".txt\"\nfilep = d1+\".pdf\"\nf = open(filen,\"a\")\nstatus = True\nwhile status:\n    f.write(\"\\n\")",
+        "detail": "vacine",
+        "documentation": {}
+    },
+    {
+        "label": "filen",
+        "kind": 5,
+        "importPath": "vacine",
+        "description": "vacine",
+        "peekOfCode": "filen = d1+\".txt\"\nfilep = d1+\".pdf\"\nf = open(filen,\"a\")\nstatus = True\nwhile status:\n    f.write(\"\\n\")\n    menu = \"\"\"   \n                Vaccination\n                ____________\n    \"\"\"",
+        "detail": "vacine",
+        "documentation": {}
+    },
+    {
+        "label": "filep",
+        "kind": 5,
+        "importPath": "vacine",
+        "description": "vacine",
+        "peekOfCode": "filep = d1+\".pdf\"\nf = open(filen,\"a\")\nstatus = True\nwhile status:\n    f.write(\"\\n\")\n    menu = \"\"\"   \n                Vaccination\n                ____________\n    \"\"\"\n    f.write(menu)",
+        "detail": "vacine",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "vacine",
+        "description": "vacine",
+        "peekOfCode": "f = open(filen,\"a\")\nstatus = True\nwhile status:\n    f.write(\"\\n\")\n    menu = \"\"\"   \n                Vaccination\n                ____________\n    \"\"\"\n    f.write(menu)\n    f.write(\"Date & Time : \"+str(presentday.strftime('%d-%m-%y')) +\" \"+str(time1) +\"\\n\")",
+        "detail": "vacine",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "vacine",
+        "description": "vacine",
+        "peekOfCode": "status = True\nwhile status:\n    f.write(\"\\n\")\n    menu = \"\"\"   \n                Vaccination\n                ____________\n    \"\"\"\n    f.write(menu)\n    f.write(\"Date & Time : \"+str(presentday.strftime('%d-%m-%y')) +\" \"+str(time1) +\"\\n\")\n    name = input(\"Enter Your Name : \")",
+        "detail": "vacine",
+        "documentation": {}
+    }
+]
